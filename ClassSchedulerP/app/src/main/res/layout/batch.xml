@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+  <LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+      <TextView
+          android:id="@+id/textCode"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:text="code"
+          android:textSize="16sp" />
+
+      <TextView
+          android:id="@+id/textCourse"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="10dp"
+          android:layout_weight="1"
+          android:gravity="right"
+          android:text="Course"
+          android:textSize="16sp" />
+  </LinearLayout>
+
+      <LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+          <TextView
+              android:id="@+id/textStartDate"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:text="stdate"
+              android:textSize="16sp" />
+
+          <TextView
+              android:id="@+id/textEndDate"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginRight="10dp"
+              android:layout_weight="1"
+              android:gravity="right"
+              android:text="EndDate"
+              android:textSize="16sp" />
+
+  </LinearLayout>
+
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+
+    <Button
+        android:id="@+id/btnClasses"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="List Classes" />
+
+
+    <Button
+        android:id="@+id/btnAddClass"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Add Class" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Update" />
+
+  </LinearLayout>
+
+  <LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+         <TextView
+              android:layout_width="match_parent"
+              android:layout_height="3dp"
+              android:background="#ff0000"
+              android:text="" />
+
+      </LinearLayout>
+
+</LinearLayout>

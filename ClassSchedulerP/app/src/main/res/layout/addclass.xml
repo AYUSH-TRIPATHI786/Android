@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:paddingLeft="10dp">
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Batch Code "
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textBatchCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Batch"
+            android:textColor="#000000"
+            android:textSize="20sp"></TextView>
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Class Date"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="showDatePicker"
+                android:src="@drawable/datepicker"></ImageButton>
+
+            <TextView
+                android:id="@+id/textClassDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:text="2012-04-24"
+                android:textColor="#000000"></TextView>
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Class Time"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="showTimePicker"
+                android:src="@drawable/datepicker"></ImageButton>
+
+            <TextView
+                android:id="@+id/textClassTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:text="19:00"
+                android:textColor="#000000"></TextView>
+        </LinearLayout>
+    </TableRow>
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Period (Min)"
+            android:textColor="#000000" />
+
+
+        <EditText
+            android:id="@+id/editPeriod"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number">
+
+        </EditText>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Topics"
+            android:textColor="#000000" />
+
+
+        <EditText
+            android:id="@+id/editTopics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+    </TableRow>
+
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remarks"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/editRemarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></EditText>
+    </TableRow>
+
+    <TableRow android:layout_span="2">
+
+        <CheckBox
+            android:id="@+id/chkAdjust"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adjust Last Class?"></CheckBox>
+    </TableRow>
+
+    <TableRow
+        android:layout_span="2"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addClass"
+            android:text="ADD CLASS"></Button>
+    </TableRow>
+
+</TableLayout>
+

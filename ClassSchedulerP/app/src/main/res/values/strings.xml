@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Class Scheduler</string>
+    <string name="hello">Hello World, ClassSchedulerActivity!</string>
+    <string name="delete_batch">"Do you want to delete current batch?"</string>
+    <string name="proceed_delete">"Yes"</string>
+    <string name="cancel_delete">"No"</string>
+    <string name="delete_class">"Do you want to delete current class?"</string>
+
+
+</resources>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:paddingTop="10dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Code"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/editBatchCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <!--when the activity starts the keyboard will apppear and focus will be here-->
+                <requestFocus />
+            </EditText>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Course"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/editCourse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></EditText>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Start Date"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="showDatePicker"
+                    android:src="@drawable/datepicker"></ImageButton>
+
+                <TextView
+                    android:id="@+id/textStartDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="2012-04-24"
+                    android:textColor="#000000"></TextView>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Start Time"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="showTimePicker"
+                    android:src="@drawable/datepicker"></ImageButton>
+
+                <TextView
+                    android:id="@+id/textStartTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:text="19:00"
+                    android:textColor="#000000"></TextView>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="No. Classes"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/editClasses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number">
+                "
+
+            </EditText>
+        </TableRow>
+
+        <TableRow>
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Classes Per Week"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/editClassesPerWeek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"></EditText>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Period (Min)"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/editPeriod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"></EditText>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Remarks"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/editRemarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></EditText>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="addBatch"
+                android:text="Add Batch"></Button>
+        </TableRow>
+    </TableLayout>
+
+</ScrollView>
